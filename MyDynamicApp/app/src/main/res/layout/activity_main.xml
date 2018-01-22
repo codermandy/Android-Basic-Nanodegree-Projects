@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.education.mydynamicapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Mohit!"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="680dp"
+        android:layout_toEndOf="@+id/text"
+        android:layout_toRightOf="@+id/text"
+        android:marginRight="680dp"
+        android:text="Press Me"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="408dp" />
+</android.support.constraint.ConstraintLayout>

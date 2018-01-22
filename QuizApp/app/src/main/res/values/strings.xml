@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="q1_header">Question 1 out of 4</string>
+    <string name="q2_header">Question 2 out of 4</string>
+    <string name="q3_header">Question 3 out of 4</string>
+    <string name="q4_header">Question 4 out of 4</string>
+
+    <string name="q1_text">Who is current Prime Minister of India?</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.env5june.android.environmentday.MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/environment"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Environment Day"
+        android:textSize="30sp"
+        android:shadowColor="#808080"
+
+        android:padding="8dp"
+        android:id="@+id/title_text_view"
+        android:textColor="#DEB887"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="5 June"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#DEB887"
+        android:layout_below="@id/title_text_view"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:text="“The best time to plant a tree is twenty years ago. The second best time is now.” "
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="#F39C12"
+        android:layout_below="@id/title_text_view"
+        android:textSize="18dp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From, Mohit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="casual"
+        android:textSize="28sp"
+        android:textColor="#D3D3D3"/>
+</RelativeLayout>

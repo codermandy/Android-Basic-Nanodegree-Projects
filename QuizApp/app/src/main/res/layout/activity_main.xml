@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="submitAnswers">
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/q1_header"
+          />
+        <TextView
+            android:text="IC chips used in computers are  made of"
+            style="@style/QuestionTextStyle"/>
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/single_choice_answer">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lead" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold" />
+            <RadioButton android:id="@+id/q1_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sillicon"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chromium"
+               />
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/q2_header"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What are attributes of RAM?"
+            style="@style/QuestionTextStyle"/>
+
+        <CheckBox
+            android:id="@+id/q2_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volatile"/>
+        <CheckBox
+            android:id="@+id/q2_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sequential Access"/>
+
+        <CheckBox
+            android:id="@+id/q2_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Random Access"/>
+
+        <CheckBox
+            android:id="@+id/q2_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-Volatile"/>
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/q3_header"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/QuestionTextStyle"
+            android:text="What was the name of first computer?"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Enter Answer Here"
+            android:id="@+id/q3_correct_answer"/>
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/q4_header"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Who is known as the father of the Internet?"
+            style="@style/QuestionTextStyle"/>
+        <CheckBox
+            android:id="@+id/q4_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Charles Babbage"/>
+        <CheckBox
+            android:id="@+id/q4_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lady Ada Lovelace"/>
+
+        <CheckBox
+            android:id="@+id/q4_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tim Berners Lee"/>
+        <CheckBox
+            android:id="@+id/q4_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vint Cerf"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:onClick="correctAnswers"/>
+        <Button
+            android:onClick="resetScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="RESET"
+           />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
