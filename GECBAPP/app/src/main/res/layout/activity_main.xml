@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/college_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:alpha=".4"
+            android:paddingTop="@dimen/top_bottom"
+            android:paddingLeft="@dimen/side_padding"
+            android:paddingRight="@dimen/side_padding"
+            android:paddingBottom="@dimen/top_bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/project_image" />
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title"
+            android:textSize="48sp"
+            android:padding="16dp"
+            android:gravity="center_horizontal"/>
+
+
+        <TextView
+            android:id="@+id/description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/college_image_view"
+            android:paddingLeft="@dimen/side_padding"
+            android:paddingRight="@dimen/side_padding"
+            android:paddingBottom="@dimen/top_bottom"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/location_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description_text_view"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/location_image"
+            android:drawableLeft="@drawable/location_image"
+            android:padding="8dp"
+            android:text="@string/address"
+            android:layout_gravity="fill_vertical" />
+
+        <TextView
+            android:id="@+id/contact_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/location_text_view"
+            android:drawableStart="@drawable/contact_image"
+            android:drawableLeft="@drawable/contact_image"
+            android:drawablePadding="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="@dimen/side_padding"
+            android:paddingLeft="@dimen/side_padding"
+            android:text="@string/contact"
+            android:gravity="fill_vertical"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
