@@ -6,4 +6,4 @@ Android Build Tools ,
 Android Support Repository 
 
 These projects use the Gradle build system. 
-To build this project, use the "gradlew build" command or use "Import Project" in Android Studio.
+To build use the "gradlew build" command or use "Import Project" in Android Studio.
